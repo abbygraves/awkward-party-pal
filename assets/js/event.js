@@ -7,7 +7,6 @@ function askKanye() {
     let apiUrl = "https://api.kanye.rest";
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
-            console.log(data.quote);
             genApiDiv(data);
         })
     })
@@ -36,9 +35,8 @@ function copyClipboard(event) {
         navigator.clipboard.writeText(copyText);
         alert("Copied the text: " + copyValue);
     }
-    
-    
 }
+
 
 // event listenter to trigger askKanye function
 kanyeQuoteBtn.addEventListener("click", askKanye);
