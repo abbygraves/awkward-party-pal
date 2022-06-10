@@ -1,4 +1,4 @@
-let apiGenEl = document.querySelector("#api-generation");
+let apiGenEl = document.querySelector("#api-gen");
 let kanyeQuoteBtn = document.querySelector("#kanye-btn");
 let copyBtn = document.querySelector("#copy");
 
@@ -8,14 +8,14 @@ function askKanye() {
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
             console.log(data.quote);
-            generateApiDiv(data);
+            genApiDiv(data);
         })
     })
 }
 
 
 // function to display api response data
-function generateApiDiv(data) {
+function genApiDiv(data) {
     // clear existing quote
     apiGenEl.innerHTML = "";
 
@@ -30,12 +30,14 @@ function generateApiDiv(data) {
 
 // function to add a copy of displayed api response data to the clipboard
 function copyClipboard(event) {
-    let copyClick = event.target.getAttribute("#copy");
-    console.log("click");
-    //let copyText = ;
-    //copyText.select(data.quote);
-    //navigator.clipboard.writeText(copyText);
-    //alert("Copied the text: " + copyText);
+    let copyText = document.getElementById("copy");
+    if (copyText) {
+        let copyValue = copyText.textContent;
+        navigator.clipboard.writeText(copyText);
+        alert("Copied the text: " + copyValue);
+    }
+    
+    
 }
 
 // event listenter to trigger askKanye function
