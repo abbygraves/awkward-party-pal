@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6e1e3196b2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
+</head>
+
+
+<body>
+
+  <div class="grid grid-cols-5 h-screen">
+    <sidebar class="col-span-1 bg-teal-500">
+      <h2 class="mb-8">AWKWARD PARTY <br/> PAL</h2>
+      <div class="flex justify-left flex-col pr-14">
+        <button class="button-style">About</button>
+        <button class="button-style">My Pals</button>
+        <a href="event.html" class="button-style">Let's Party</a>
+      </div>
+    </sidebar>
+
+    <main class="col-span-4 grid grid-rows-6">
+
+      <div class="col-span-4 row-span-2 bg-yellow-400 about-sec">
+        <h2 class="tracking-wide">ABOUT</h2>
+        <p class="">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium voluptatum ipsum soluta officiis eaque, quo perspiciatis, mollitia quis id doloribus aut placeat exercitationem fugiat eum quae, quos minima veritatis sed?
+          Incidunt numquam natus blanditiis iure ex ducimus quas vitae cumque neque vero, facilis est nihil saepe!
+        </p>
+        <img class="float-right" src="./assets/images/they-dont-know.png">
+      </div>
+      
+      <div class="col-span-4 row-span-3 bg-yellow-400 flex flex-row pt-8">
+        <form class="form-container flex flex-col justify-center p-0">
+          <label class="form-label tracking-wide pl-1 pb-2 bg-teal-600 flex grow ">GUEST INFO</label>
+          <div class="flex flex-col p-3">
+            <input class="form-input" placeholder="Jane Doe"/>
+            <input class="form-input details" placeholder="Loves to dip their pizza in ranch!"/>
+            <button class="button-style save-btn">Save</button>
+          </div>
+        </form>
+        <div class="card ml-4">
+          <div class="card-title bg-teal-600 p-2 text-center">Name</div>
+          <ul class="list-disc ml-5">
+            <li>Loves dogs</li>
+            <li>Loves cats</li>
+            <li>Loves other bullshit</li>
+            <li>More bullshit</li>
+          </ul>
+        </div>
+        <div class="card ml-4">
+          <div class="card-title bg-teal-600 p-2 text-center">Name</div>
+          <ul class="list-disc ml-5">
+            <li>Loves dogs</li>
+            <li>Loves cats</li>
+            <li>Loves other bullshit</li>
+            <li>More bullshit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-span-4 row-span-1 bg-yellow-400 flex items-center">
+        <button class="button-emer">IN CASE OF EMERGENCY <i class="fa-solid fa-triangle-exclamation"></i></button>
+      </div>
+    </main>
+   
+
+  </div>
+
+</body>
+
+
+</html>

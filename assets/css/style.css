@@ -103,11 +103,6 @@
   }
   
   /* BUTTONS */
-.btn {
-  background-color: var(--yellow);
-  cursor: pointer;
-}
-
   .button-style {
     font-size: 2vh;
     padding: 10px 0px;

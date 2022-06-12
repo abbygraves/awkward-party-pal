@@ -17,23 +17,19 @@
 
     <div class="grid grid-cols-7 h-screen bg-yellow-400">
 
-        <header class="h-2/5 md:h-full col-span-7 md:col-span-2 bg-cyan-600 p-2">
-            <h2 class="text-4xl lg:text-5xl font-black text-gray-50 text-center leading-5 md:text-left">
-                AWKWARD <span class="hidden md:block"></br></span>
-                PARTY <span class="hidden md:block"></br></span>PAL</h2>
+        <header class="sticky top-0 max-h-fit md:h-full col-span-7 md:col-span-2 bg-teal-500 p-2">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-50 drop-shadow-2xl text-center md:text-left">
+                AWKWARD PARTY PAL</h2>
                
-            <nav class="pt-6">
-                <ul class="grid grid-cols-4 gap-y-6 text-center">
-                    <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+            <nav class="pt-5">
+                <ul class="grid grid-cols-3 gap-y-6 text-center">
+                    <li class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                         md:hover:transition-colors md:hover:bg-cyan-200 duration-1000 hover:text-red-500">
-                        <a href="./index.html">Home</a></li>
-                        <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
-                        md:hover:transition-colors md:hover:bg-cyan-200 duration-1000 hover:text-red-500">
-                        <a href="#">My Pals</a></li>
-                        <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                        <a href="./index.html">Go Home</a></li>
+                    <li class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                         md:hover:transition-colors md:hover:bg-cyan-200 duration-1000 hover:text-red-500">
                         <a href="#" id="yeezy-btn">Yeezy Does It</a></li>
-                        <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    <li class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                         md:hover:transition-colors md:hover:bg-cyan-200 duration-1000 hover:text-red-500">
                         <a href="#" id="fact-btn">Icebreakerz</a></li>
                 </ul>
@@ -41,11 +37,12 @@
         </header>
 
         <main class="col-span-7 md:col-span-5 grid">
-            <div class="p-7">
 
-                <p class="text-2xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <div class="p-7">
+                <h3 class="text-2xl font-semibold">DIGITAL COURAGE</h3>
+                <p class="text-xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Fugit maiores aspernatur, atque consectetur ea error!</p>
-                <div class="h-3/4 m:h-2/4 border-solid border-4 border-cyan-600 rounded p-3">
+                <div class="h-3/4 m:h-2/4 border-solid border-2 border-black rounded p-3">
                     <div class="h-full border-solid border-8 border-cyan-600 rounded bg-gray-50 p-5 relative">
                         <p class="text-4xl text-left leading-relaxed" id="api-gen">I'm here when you need me, pal.</p>
                         <button type="button" class="absolute bottom-0 right-0 p-3" id="copy">
@@ -55,11 +52,12 @@
                 </div>
             </div>
 
-            <!--
-            <div>
-                <button type="button" class="btn" id="yeezy-btn">Yeezy Does It</button>
-                <button type="button" id="fact-btn">Icebreakerz</button>
-            </div>-->
+            <div class="p-7">
+                <h3 class="text-2xl font-semibold">MY PARTY PALS</h3>
+                <p class="text-xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit maiores aspernatur, atque consectetur ea error!</p>
+                <div id="guest-cards"></div>
+            </div>
 
         </main>
 
