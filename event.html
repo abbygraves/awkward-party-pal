@@ -18,29 +18,35 @@
     <div class="grid grid-cols-7 h-screen bg-yellow-400">
 
         <header class="h-2/5 md:h-full col-span-7 md:col-span-2 bg-cyan-600 p-2">
-            <h2 class="text-4xl lg:text-5xl font-black text-gray-50">AWKWARD</br>PARTY</br>PAL</h2>
+            <h2 class="text-4xl lg:text-5xl font-black text-gray-50 text-center leading-5 md:text-left">
+                AWKWARD <span class="hidden md:block"></br></span>
+                PARTY <span class="hidden md:block"></br></span>PAL</h2>
+            
+            <!-- <nav class="hidden md:block pt-6"> -->    
             <nav class="pt-6">
-                <ul class="grid gap-y-6">
-                    <li class="text-xl font-bold bg-yellow-400 rounded-r w-3/4 p-2 -ml-2 
+                <ul class="grid grid-cols-4 gap-y-6">
+                    <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     hover:transition-colors hover:bg-cyan-200 duration-1000 hover:text-red-500">
                         <a href="#">Home</a></li>
-                    <li class="text-xl font-bold bg-yellow-400 rounded-r w-3/4 p-2 -ml-2 
+                        <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     hover:transition-colors hover:bg-cyan-200 duration-1000 hover:text-red-500">
                         <a href="#">My Pals</a></li>
-                    <li class="text-xl font-bold bg-yellow-400 rounded-r w-3/4 p-2 -ml-2 
+                        <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     hover:transition-colors hover:bg-cyan-200 duration-1000 hover:text-red-500">
                         <a href="#" id="yeezy-btn">Yeezy Does It</a></li>
-                    <li class="text-xl font-bold bg-yellow-400 rounded-r w-3/4 p-2 -ml-2 
-                    hover:transition-colors hover:bg-cyan-200 duration-1000 hover:text-red-500">
+                        <li class="m:col-start-1 md:col-span-4 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                        hover:transition-colors hover:bg-cyan-200 duration-1000 hover:text-red-500">
                         <a href="#" id="fact-btn">Icebreakerz</a></li>
                 </ul>
             </nav>
-
         </header>
-        <main class="col-span-7 md:col-span-5 grid">
 
+        <main class="col-span-7 md:col-span-5 grid">
             <div class="p-7">
-                <div class="h-full border-solid border-4 border-cyan-600 rounded p-3">
+
+                <p class="text-2xl mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit maiores aspernatur, atque consectetur ea error!</p>
+                <div class="h-3/4 m:h-2/4 border-solid border-4 border-cyan-600 rounded p-3">
                     <div class="h-full border-solid border-8 border-cyan-600 rounded bg-gray-50 p-5 relative">
                         <p class="text-4xl text-left leading-relaxed" id="api-gen">I'm here when you need me, pal.</p>
                         <button type="button" class="absolute bottom-0 right-0 p-3" id="copy">
