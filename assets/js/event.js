@@ -1,7 +1,8 @@
 let apiGenEl = document.querySelector("#api-gen");
-let kanyeQuoteBtn = document.querySelector("#kanye-btn");
-let tFtBtn = document.querySelector("#tFt-btn");
+let yeezyBtn = document.querySelector("#yeezy-btn");
+let factBtn = document.querySelector("#fact-btn");
 let copyBtn = document.querySelector("#copy");
+
 
 // function to get random Kanye West quotes
 function askKanye() {
@@ -30,6 +31,7 @@ function randomFact() {
         }
     });
 }
+
 
 // function to display kanye response
 function genKanyeDiv(data) {
@@ -72,10 +74,10 @@ function copyClipboard(event) {
 
 
 // event listenter to trigger askKanye function
-kanyeQuoteBtn.addEventListener("click", askKanye);
+yeezyBtn.addEventListener("click", askKanye);
 
 // event listener to trigger randomFact function
-tFtBtn.addEventListener("click", randomFact);
+factBtn.addEventListener("click", randomFact);
 
 // event listener to copy api response
 copyBtn.addEventListener("click", copyClipboard);

@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e1e3196b2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
+<!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
+
 <body>
-    <div>
-        <button type="button" id="kanye-btn">What would Kanye say?</button>
-        <button type="button" id="tFt-btn">Random Fact</button>
+
+    <div class="grid grid-cols-7 h-screen bg-yellow-400">
+
+
+        <main class="col-span-7 md:col-span-5 grid">
+
+            <div class="border-solid border-2 border-cyan-600 rounded p-7">
+                <div class="h-full border-solid border-4 border-cyan-600 rounded p-3">
+                    <div class="h-full border-solid border-8 border-cyan-600 rounded bg-gray-50 p-5 relative">
+                        <p class="text-4xl text-left leading-relaxed" id="api-gen">I'm here when you need me</p>
+                        <button type="button" class="absolute bottom-0 right-0 p-3" id="copy">
+                            <i class="fa-regular fa-copy text-4xl text-cyan-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="btn" id="yeezy-btn">Yeezy Does It</button>
+                <button type="button" id="fact-btn">Icebreakerz</button>
+            </div>
+
+        </main>
+
     </div>
 
-    <div>
-        <div id="api-gen"></div>
-        <button type="button" id="copy">copy</button>
-    </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/event.js"></script>
 </body>
+
 </html>
