@@ -14,7 +14,7 @@ function askKanye() {
 }
 
 
-// function to get random this for that descriptions
+// function to display random fact
 function randomFact() {
     var limit = 1;
     $.ajax({
@@ -64,8 +64,9 @@ function copyClipboard(event) {
     let copyText = document.getElementById("copy");
     if (copyText) {
         let copyValue = copyText.textContent;
-        navigator.clipboard.writeText(copyText);
-        alert("Copied the text: " + copyValue);
+        console.log(copyValue);
+        navigator.clipboard.writeText(copyValue);
+        //alert("Copied the text: " + copyValue);
     }
 }
 
@@ -73,7 +74,7 @@ function copyClipboard(event) {
 // event listenter to trigger askKanye function
 kanyeQuoteBtn.addEventListener("click", askKanye);
 
-// event listener to trigger thisForThat function
+// event listener to trigger randomFact function
 tFtBtn.addEventListener("click", randomFact);
 
 // event listener to copy api response
