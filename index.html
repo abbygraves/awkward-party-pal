@@ -74,6 +74,20 @@
       <div class="col-span-4 row-span-1 bg-yellow-400 flex items-center">
         <a href="https://www.jellotime.com/" target="_blank" class="button-emer">IN CASE OF EMERGENCY <i class="fa-solid fa-triangle-exclamation"></i></a>
       </div>
+
+      <!-- This is a work in progress. I'm doing fine-->
+      <button type="button" onclick="saveProfile(document.getElementById('name').value, document.getElementById('icebreaker').value)">Save</button>
+
+      <button type="button" onclick="getProfiles()">Get</button>
+      
+      <button type="button" onclick="clearProfiles()">Clear</button>
+      
+      <script src="./assets/js/party.js"></script>
+      
+      <input type="text" id="name">
+      
+      <input type="text" id="icebreaker">
+
     </main>
    
 
