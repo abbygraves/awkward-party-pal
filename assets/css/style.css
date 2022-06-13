@@ -58,6 +58,7 @@ sidebar h2 {
   background-color: var(--yellow);
   width: 50%;
   margin: 0px 5px 0px 30px;
+  max-height: 334px;
 }
 
 .form-label {
@@ -124,6 +125,7 @@ ul li {
 }
 
 .button-emer {
+  text-align: center;
   font-size: 24px;
   padding: 10px 20px;
   margin: 10px 115px;
