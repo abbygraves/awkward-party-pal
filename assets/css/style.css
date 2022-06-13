@@ -59,6 +59,7 @@ sidebar h2 {
   width: 50%;
   margin: 0px 5px 0px 30px;
   max-height: 340px;
+  filter: drop-shadow(-3px 4px 3px var(--grey));
 }
 
 .form-label {
@@ -79,6 +80,19 @@ sidebar h2 {
   font-size: 1.2rem;
   border: 2px solid var(--black);
   border-radius: 5px;
+}
+
+.guest-info h2 {
+  color: var(--black);
+  font-weight: bolder;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.guest-info-container {
+  width: 50%;
+  margin: 0px 5px 0px 30px;
+  max-height: 340px;
 }
 
 .details {
