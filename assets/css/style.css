@@ -45,6 +45,10 @@ sidebar h2 {
   position: relative;
 }
 
+.img {
+  float: left;
+}
+
 .about-sec img {
   width: 320px;
   position: absolute;
@@ -138,12 +142,7 @@ ul li {
   font-weight: bold;
 }
 
-/* .button-style:hover,
-.button-style:focus {
-  box-shadow: inset 11em 0 0 0 var(--teal);
-  transition: 0.5s;
-  color: white;
-} */
+
 
 .button-emer {
   text-align: center;
@@ -179,9 +178,4 @@ ul li {
   margin-left: 2px;
 }
 
-/* .save-btn:hover,
-.save-btn:focus {
-  box-shadow: inset 34.25em 0 0 0 var(--mint);
-  transition: 0.5s;
-  color: var(--black);
-} */
+
