@@ -2,97 +2,112 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/6e1e3196b2.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Awkward Party Pal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e1e3196b2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Awkward Party Pal</title>
 </head>
 
-
 <body>
+    <div class="grid grid-cols-7 h-screen bg-yellow-400">
 
-  <div class="grid grid-cols-5 h-screen">
-    <sidebar class="col-span-1 bg-teal-500">
-      <h2 class="mb-8 pt-2 lg:text-5xl md:text-3xl">AWKWARD PARTY <br/> PAL</h2>
-      <div class="flex justify-left flex-col pr-14">
-        <button class="button-style mt-10 md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white">About</button>
-        <!-- <button class="button-style md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white">My Pals</button> -->
-        <a href="event.html" class="button-style mt-10 md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white">Let's Party</a>
-      </div>
-    </sidebar>
+        <!-- NAV SIDEBAR: medium screens and larger, NAV TOPBAR: small screens -->
+        <header class="col-span-7 md:col-span-2 top-0 max-h-fit md:h-full p-2 bg-teal-500">
+            <h2 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
+                AWKWARD PARTY PAL
+            </h2>
 
-    <main class="col-span-4 grid grid-rows-6">
+            <nav class="pt-5">
+                <ul class="grid grid-cols-3 gap-y-6 text-center">
+                    <a href="./index.html" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
+                        About
+                    </a>
+                    <a href="#" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
+                        Recon
+                    </a>
+                    <a href="./event.html" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
+                        Let's Party
+                    </a>
+                </ul>
+            </nav>
+        </header>
 
-      <div class="col-span-4 row-span-2 bg-yellow-400 about-sec">
-        <h2 class="tracking-wide lg:text-3xl">ABOUT</h2>
-        <p class="font-medium">
-          We get it, you're awkward. Luckily for you so are we! Welcome to Awkward Party Pal. You may be that person who thrives on the internet, but in real life you're...well let's not even go there. We both know you resemble the dude with the party hat on the right. Instead of showing up to an event empty handed 
-          (if you actually ever decide to leave your house) we built this website to generate conversation starters so you'll never have to deal with awkward silence again! 
-        </p>
-        <img class="float-right" src="./assets/images/they-dont-know.png">
-      </div>
-      
-      <div class="col-span-4 row-span-3 bg-yellow-400 flex flex-row pt-8 justify-center guest-info">
-        <form class="form-container flex flex-col justify-center p-0">
-          <label class="form-label tracking-wide pl-3 pb-2 bg-teal-600 flex grow items-center">GUEST INFO</label>
-          <div class="flex flex-col p-3">
-            <input class="form-input" placeholder="Jane Doe"/>
-            <input class="form-input details" placeholder="Loves to dip their pizza in ranch!"/>
-            <button class="button-style mt-5 mb-3 save-btn md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white">Save</button>
-          </div>
-        </form>
-        <div class="guest-info-container pr-10">
-          <h2 class="tracking-wide mb-2 lg:text-3xl">ADDING GUEST INFO</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, dolorem ratione incidunt soluta optio eligendi earum, impedit quisquam, ea sit beatae doloremque molestias dolore temporibus obcaecati magni unde eos facilis.
-          </p>
+        <!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
 
-        </div>
-        <!-- <div class="card ml-4">
-          <div class="card-title bg-teal-600 p-2 text-center">Name</div>
-          <ul class="list-disc ml-5">
-            <li>Loves dogs</li>
-            <li>Loves cats</li>
-            <li>Loves other bullshit</li>
-            <li>More bullshit</li>
-          </ul>
-        </div> -->
-        <!-- <div class="card ml-4">
-          <div class="card-title bg-teal-600 p-2 text-center">Name</div>
-          <ul class="list-disc ml-5">
-            <li>Loves dogs</li>
-            <li>Loves cats</li>
-            <li>Loves other bullshit</li>
-            <li>More bullshit</li>
-          </ul>
-        </div> -->
-      </div>
+        <!-- begin main -->
+        <main class="col-span-7 md:col-span-5 bg-yellow-400">
 
-      <div class="col-span-4 row-span-1 bg-yellow-400 flex items-center">
-        <a href="https://www.jellotime.com/" target="_blank" class="button-emer">IN CASE OF EMERGENCY <i class="fa-solid fa-triangle-exclamation"></i></a>
-      </div>
+            <!-- ABOUT section -->
+            <div class="md:flex">
+                <div class="col-span-7 md:col-span-4 p-4">
+                    <h3 class="text-3xl font-bold tracking-wide">ABOUT</h3>
+                    <div class="h-3/4 m:h-2/4 border-solid border-2 border-black rounded p-3 generate-container">
+                        <div class="h-full border-solid border-8 border-teal-600 rounded bg-white p-5 relative">
+                            <p class="">
+                                We get it, you're awkward. Luckily for you so are we! 
+                                Welcome to Awkward Party Pal. You may be that person who 
+                                thrives on the internet, but in real life you're...well 
+                                let's not even go there. We both know you resemble the 
+                                dude with the party hat on the right. Instead of showing 
+                                up to an event empty handed (if you actually ever decide 
+                                to leave your house) we built this website to generate 
+                                conversation starters so you'll never have to deal with 
+                                awkward silence again!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- APP MEME -->
+                <div class="col-span-7 md:col-span-3">
+                    <img class="" src="./assets/images/they-dont-know.png">
+                </div>
+            </div>
 
-      <!-- This is a work in progress. I'm doing fine-->
-      <button type="button" onclick="saveProfile(document.getElementById('name').value, document.getElementById('icebreaker').value)">Save</button>
+            <!-- PARTY RECON FORM -->
+            <div class="md:flex">
+                <div class="col-span-7 md:col-span-4">
+                    <form class="">
+                        <label class="bg-teal-600">
+                            PARTY RECON</label>
+                        <div class="">
+                            <input class="" placeholder="Jane Doe" />
+                            <input class="" placeholder="Loves to dip their pizza in ranch!" />
+                            <button
+                                class="button-style mt-5 mb-3 save-btn md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white">Save</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- HOW TO USE THE FORM blurby -->
+                <div class="col-span-7 md:col-span-3">
+                    <h2 class="">BE AN EXTROVERT!</h2>
+                    <p class="font-medium">
+                        Jk, jk. We’d never ask you to do anything that crazy.
+                        So how can Awkward Party Pal help you become the life of the party?
+                        It starts with a little RECON. See that form there?
+                        Use that to start your party prep. Put your internet stalking skills
+                        to good use and start making notes about partygoers on the RSVP list.
+                        No, not creepy notes. Just the fun stuff, and maybe some things you’d
+                        be smart to avoid. We’ll keep track of your notes, and when it’s time
+                        to party, you can use us as your own personal party assistant.
+                    </p>
 
-      <button type="button" onclick="getProfiles()">Get</button>
-      
-      <button type="button" onclick="clearProfiles()">Clear</button>
-      
-      <script src="./assets/js/party.js"></script>
-      
-      <input type="text" id="name">
-      
-      <input type="text" id="icebreaker">
+                </div>
+            </div>
+            
+            <!-- IN CASE OF EMERGENCY -->
+            <div class="col-span-4 row-span-1 bg-yellow-400 flex items-center">
+                <a href="https://www.jellotime.com/" target="_blank" class="button-emer">IN CASE OF EMERGENCY <i
+                        class="fa-solid fa-triangle-exclamation"></i></a>
+            </div>
 
-    </main>
-   
-
-  </div>
-
+        </main>
+    </div>
 </body>
 
 
