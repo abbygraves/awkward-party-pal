@@ -56,6 +56,10 @@ sidebar h2 {
   bottom: 67%;
 }
 
+.section {
+  filter: drop-shadow(-3px 4px 3px var(--grey));
+}
+
 .form-container {
   border: 2px solid var(--grey);
   border-radius: 5px;
