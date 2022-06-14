@@ -16,9 +16,9 @@
 
         <!-- NAV SIDEBAR: medium screens and larger, NAV TOPBAR: small screens -->
         <header class="col-span-7 md:col-span-2 top-0 max-h-fit md:h-full p-2 bg-teal-500">
-            <h2 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
+            <h1 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
                 AWKWARD PARTY PAL
-            </h2>
+            </h1>
 
             <nav class="pt-5">
                 <ul class="grid grid-cols-3 gap-y-6 text-center">
@@ -44,10 +44,8 @@
         <main class="col-span-7 md:col-span-5 bg-yellow-400 p-4">
 
             <!-- ABOUT section -->
-
-
-            <h3 class="text-3xl font-bold tracking-wide">ABOUT</h3>
-            <div class="col-span-7 md:col-span-5">
+            <h2 class="text-3xl font-bold tracking-wide">ABOUT</h2>
+            <div class="mb-10 col-span-7 md:col-span-5">
                 <div class="border-solid border-2 border-black rounded p-3 generate-container">
                     <div class="border-solid border-8 border-teal-600 rounded bg-white p-5">
                         <img class="float-left mr-3 w-2/4" src="./assets/images/they-dont-know.png">
@@ -66,37 +64,45 @@
                 </div>
             </div>
 
-
-            <!-- PARTY RECON FORM -->
-            <div class="md:flex p-4">
-                <div class="col-span-7 md:col-span-4">
-                    <form class="">
-                        <label class="bg-teal-600">
-                            PARTY RECON</label>
-                        <div class="">
-                            <input class="" placeholder="Jane Doe" />
-                            <input class="" placeholder="Loves to dip their pizza in ranch!" />
-                            <button
-                                class="button-style mt-5 mb-3 save-btn md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white">Save</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- HOW TO USE THE FORM blurby -->
-                <div class="col-span-7 md:col-span-3">
-                    <h2 class="">BE AN EXTROVERT!</h2>
-                    <p class="font-medium">
-                        Jk, jk. We’d never ask you to do anything that crazy.
-                        So how can Awkward Party Pal help you become the life of the party?
-                        It starts with a little RECON. See that form there?
-                        Use that to start your party prep. Put your internet stalking skills
-                        to good use and start making notes about partygoers on the RSVP list.
-                        No, not creepy notes. Just the fun stuff, and maybe some things you’d
-                        be smart to avoid. We’ll keep track of your notes, and when it’s time
-                        to party, you can use us as your own personal party assistant.
-                    </p>
-
+            <!-- PARTY RECON ABOUT -->
+            <h2 class="text-3xl font-bold tracking-wide">BE AN EXTROVERT!</h2>
+            <div class="mb-10 col-span-7 md:col-span-5">
+                <div class="border-solid border-2 border-black rounded p-3 generate-container">
+                    <div class="border-solid border-8 border-teal-600 rounded bg-white p-5">
+                        <p class="text-lg font-medium tracking-tight">
+                            Jk, jk. We’d never ask you to do anything that crazy.
+                            So how can Awkward Party Pal help you become the life of the party?
+                            It starts with a little RECON. See that form there?
+                            Use that to start your party prep. Put your internet stalking skills
+                            to good use and start making notes about partygoers on the RSVP list.
+                            No, not creepy notes. Just the fun stuff, and maybe some things you’d
+                            be smart to avoid. We’ll keep track of your notes, and when it’s time
+                            to party, you can use us as your own personal party assistant.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+<!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
+
+            <!-- PARTY RECON FORM -->
+            <div class="mb-10 col-span-7 md:col-span-5">
+                <div class="border-solid border-2 border-black rounded p-3 generate-container">
+                    <div class="border-solid border-8 border-teal-600 rounded bg-teal-600">
+                        <h3 class="text-3xl text-white font-bold tracking-wide w-full pb-2">PARTY RECON</h3>
+                        <form class="">
+                            <label for="name"></label>
+                            <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-2" id="name" name="name" placeholder="Jane Doe"/>
+                        </br>
+                            <label for="details"></label>
+                            <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-4" id="icebreaker" name="details" placeholder="Loves to dip their pizza in ranch!" />
+                        </br>
+                            <button type="submit" class="w-2/4 text-white font-bold tracking-wide rounded bg-orange-500 p-2">SAVE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
 
             <!-- IN CASE OF EMERGENCY -->
             <div class="col-span-4 row-span-1 bg-yellow-400 flex items-center">
