@@ -4,30 +4,27 @@ var formDetails=document.querySelector("#icebreaker")
 
 let saveBtn=document.querySelector("#submit");
 
-//let guestArray=[]
-//let guestIdCounter=0
 function saveProfile(event) {
- //   window.localStorage.setItem(name, iceBreakers);
+
  var guestArrayString=localStorage.getItem("guestInfo");
-let guestArray=[]
+ let guestArray=[]
  if (guestArrayString!==null){
-guestArray=JSON.parse(guestArrayString);
-console.log(guestArrayString);
+    guestArray=JSON.parse(guestArrayString);
+    console.log(guestArrayString);
 }
 
-let guestIdCounter=localStorage.getItem("guestIdCounter") || 0;
+ let guestIdCounter=localStorage.getItem("guestIdCounter") || 0;
 
  event.preventDefault();
- var guestObject={
+  var guestObject={
     name:formName.value, 
     details:formDetails.value,
     id:guestIdCounter
  }
+
  guestIdCounter++;
-//guestObject.setAttribute("id", guestIdCounter);
-console.log(guestObject.id);
+ console.log(guestObject.id);
  guestArray.push(guestObject);
- //console.log(guestArray);
  localStorage.setItem("guestInfo", JSON.stringify(guestArray));
  localStorage.setItem("guestIdCounter", guestIdCounter);
  formName.value="";
