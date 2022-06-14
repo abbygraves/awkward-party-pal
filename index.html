@@ -12,25 +12,25 @@
 </head>
 
 <body>
-    <div class="grid grid-cols-7 h-screen bg-yellow-400">
+    <main class="grid grid-cols-7 h-screen bg-yellow-400">
 
         <!-- NAV SIDEBAR: medium screens and larger, NAV TOPBAR: small screens -->
-        <header class="col-span-7 md:col-span-2 top-0 max-h-fit md:h-full p-2 bg-teal-500">
+        <header class="col-span-7 md:col-span-2 max-h-fit md:h-full p-2 bg-teal-500">
             <h1 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
                 AWKWARD PARTY PAL
             </h1>
 
             <nav class="pt-5">
                 <ul class="grid grid-cols-3 gap-y-6 text-center">
-                    <a href="./index.html" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    <a href="#about" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
                         About
                     </a>
-                    <a href="#" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    <a href="#recon" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
                         Recon
                     </a>
-                    <a href="./event.html" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                    <a href="#lets-party" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
                         Let's Party
                     </a>
@@ -41,13 +41,14 @@
         <!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
 
         <!-- begin main -->
-        <main class="col-span-7 md:col-span-5 bg-yellow-400 p-4">
+        <div class="col-span-7 md:col-span-5 bg-yellow-400">
+
 
             <!-- ABOUT section -->
-            <h2 class="text-3xl font-bold tracking-wide">ABOUT</h2>
-            <div class="mb-10 col-span-7 md:col-span-5">
-                <div class="border-solid border-2 border-black rounded p-3 generate-container">
-                    <div class="border-solid border-8 border-teal-600 rounded bg-white p-5">
+            <div class="mb-5 col-span-7 md:col-span-5">
+                <div class="p-4">
+                    <h2 class="text-3xl font-bold tracking-wide mt-5" id="about">ABOUT</h2>
+                    <div class="xl:flex border-dashed border-8 border-teal-600 rounded bg-white p-5">
                         <img class="float-left mr-3 w-2/4" src="./assets/images/they-dont-know.png">
                         <p class="text-lg font-medium tracking-tight">
                             We get it, you're awkward. Luckily for you so are we!
@@ -64,44 +65,66 @@
                 </div>
             </div>
 
-            <!-- PARTY RECON ABOUT -->
-            <h2 class="text-3xl font-bold tracking-wide">BE AN EXTROVERT!</h2>
-            <div class="mb-10 col-span-7 md:col-span-5">
-                <div class="border-solid border-2 border-black rounded p-3 generate-container">
-                    <div class="border-solid border-8 border-teal-600 rounded bg-white p-5">
-                        <p class="text-lg font-medium tracking-tight">
-                            Jk, jk. We’d never ask you to do anything that crazy.
-                            So how can Awkward Party Pal help you become the life of the party?
-                            It starts with a little RECON. See that form there?
-                            Use that to start your party prep. Put your internet stalking skills
-                            to good use and start making notes about partygoers on the RSVP list.
-                            No, not creepy notes. Just the fun stuff, and maybe some things you’d
-                            be smart to avoid. We’ll keep track of your notes, and when it’s time
-                            to party, you can use us as your own personal party assistant.
-                        </p>
+            <div class="bg-white">
+                <!-- PARTY RECON ABOUT -->
+                <div class="mb-5 col-span-7 md:col-span-5">
+                    <div class="p-4">
+                        <h2 class="text-3xl text-teal-600 font-bold tracking-wide mt-5" id="recon">BE AN EXTROVERT!</h2>
+                        <div class="xl:flex border-dashed border-8 border-yellow-400 rounded bg-white p-5">
+                            <p class="xl:w-1/2 text-lg font-medium tracking-tight mb-5">
+                                Jk, jk. We’d never ask you to do anything that crazy.
+                                So how can Awkward Party Pal help you become the life of the party?
+                                It starts with a little RECON. See that form there?
+                                Use that to start your party prep. Put your internet stalking skills
+                                to good use and start making notes about partygoers on the RSVP list.
+                                No, not creepy notes. Just the fun stuff, and maybe some things you’d
+                                be smart to avoid. We’ll keep track of your notes, and when it’s time
+                                to party, you can use us as your own personal party assistant.
+                            </p>
+                            <!-- PARTY RECON FORM -->
+                            <div
+                                class="xl:w-1/2 xl:ml-2 border-solid border-8 border-teal-600 rounded bg-teal-600 generate-container">
+                                <h3 class="text-3xl text-white font-bold tracking-wide w-full pb-2">PARTY RECON</h3>
+                                <form class="">
+                                    <label for="name"></label>
+                                    <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-2"
+                                        id="name" name="name" placeholder="Jane Doe" />
+                                    </br>
+                                    <label for="details"></label>
+                                    <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-4"
+                                        id="icebreaker" name="details"
+                                        placeholder="Loves to dip their pizza in ranch!" />
+                                    </br>
+                                    <button type="submit"
+                                        class="w-2/4 text-white font-bold tracking-wide rounded bg-orange-500 generate-container p-2">SAVE</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-<!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
-
-            <!-- PARTY RECON FORM -->
-            <div class="mb-10 col-span-7 md:col-span-5">
-                <div class="border-solid border-2 border-black rounded p-3 generate-container">
-                    <div class="border-solid border-8 border-teal-600 rounded bg-teal-600">
-                        <h3 class="text-3xl text-white font-bold tracking-wide w-full pb-2">PARTY RECON</h3>
-                        <form class="">
-                            <label for="name"></label>
-                            <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-2" id="name" name="name" placeholder="Jane Doe"/>
-                        </br>
-                            <label for="details"></label>
-                            <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-4" id="icebreaker" name="details" placeholder="Loves to dip their pizza in ranch!" />
-                        </br>
-                            <button type="submit" class="w-2/4 text-white font-bold tracking-wide rounded bg-orange-500 p-2">SAVE</button>
-                        </form>
+            <div class="bg-teal-600">
+                <!-- LET'S PARTY section -->
+                <div class="mb-5 col-span-7 md:col-span-5">
+                    <div class="p-4">
+                        <h2 class="text-3xl text-white font-bold tracking-wide mt-5" id="lets-party">YOU'VE GOT THIS
+                        </h2>
+                        <div class="xl:flex border-dashed border-8 border-yellow-400 rounded bg-white p-5">
+                            <p class="text-lg font-medium tracking-tight mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corporis error cum autem
+                                beatae inventore quibusdam architecto suscipit dolorem est iste sequi, dignissimos
+                                molestiae quo et quae. In, iste eius?!
+                            </p>
+                            <button type="button" class="xl:order-first xl:mr-2 w-2/4 rounded bg-teal-600 generate-container p-2">
+                                <a href="./event.html" class="text-white font-bold tracking-wide">LET'S PARTY</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
 
 
             <!-- IN CASE OF EMERGENCY -->
@@ -110,8 +133,8 @@
                         class="fa-solid fa-triangle-exclamation"></i></a>
             </div>
 
-        </main>
-    </div>
+        </div>
+    </main>
 </body>
 
 
