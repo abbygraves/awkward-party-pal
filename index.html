@@ -12,23 +12,23 @@
 </head>
 
 <body>
-    <main class="grid grid-cols-7 h-screen bg-yellow-400">
+    <div class="grid grid-cols-7 h-screen bg-yellow-400">
 
         <!-- NAV SIDEBAR: medium screens and larger, NAV TOPBAR: small screens -->
-        <header class="col-span-7 md:col-span-2 max-h-fit md:h-full p-2 bg-teal-500">
+        <header class="col-span-7 md:col-span-2 max-h-fit md:h-full p-2 bg-teal-500 generate-container">
             <h1 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
                 AWKWARD PARTY PAL
             </h1>
 
             <nav class="pt-5">
-                <ul class="grid grid-cols-3 gap-y-6 text-center">
+                <ul class="grid grid-cols-3 gap-y-6">
                     <a href="#about" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
                         About
                     </a>
                     <a href="#recon" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
-                        Recon
+                        Party People
                     </a>
                     <a href="#lets-party" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
@@ -41,7 +41,7 @@
         <!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
 
         <!-- begin main -->
-        <div class="col-span-7 md:col-span-5 bg-yellow-400">
+        <main class="col-span-7 md:col-span-5 bg-yellow-400">
 
 
             <!-- ABOUT section -->
@@ -65,9 +65,9 @@
                 </div>
             </div>
 
-            <div class="bg-white">
-                <!-- PARTY RECON ABOUT -->
-                <div class="mb-5 col-span-7 md:col-span-5">
+            <div class="bg-white pb-5">
+                <!-- FORM SECTION ABOUT -->
+                <div class="col-span-7 md:col-span-5">
                     <div class="p-4">
                         <h2 class="text-3xl text-teal-600 font-bold tracking-wide mt-5" id="recon">BE AN EXTROVERT!</h2>
                         <div class="xl:flex border-dashed border-8 border-yellow-400 rounded bg-white p-5">
@@ -81,10 +81,10 @@
                                 be smart to avoid. We’ll keep track of your notes, and when it’s time
                                 to party, you can use us as your own personal party assistant.
                             </p>
-                            <!-- PARTY RECON FORM -->
+                            <!-- PARTY PEOPLE FORM -->
                             <div
-                                class="xl:w-1/2 xl:ml-2 border-solid border-8 border-teal-600 rounded bg-teal-600 generate-container">
-                                <h3 class="text-3xl text-white font-bold tracking-wide w-full pb-2">PARTY RECON</h3>
+                                class="xl:w-1/2 xl:ml-2 border-solid border-8 border-teal-500 rounded bg-teal-500 generate-container">
+                                <h3 class="text-2xl text-white font-bold tracking-wide w-full pb-2">PARTY PEOPLE</h3>
                                 <form class="">
                                     <label for="name"></label>
                                     <input class="w-full border-solid border-2 border-black rounded bg-white p-2 mb-2"
@@ -96,7 +96,7 @@
                                         placeholder="Loves to dip their pizza in ranch!" />
                                     </br>
                                     <button type="submit"
-                                        class="w-2/4 text-white font-bold tracking-wide rounded bg-orange-500 generate-container p-2">SAVE</button>
+                                        class="w-2/4 text-white font-bold tracking-wide rounded bg-orange-500 hover:bg-yellow-400 generate-container p-2">SAVE</button>
                                 </form>
                             </div>
                         </div>
@@ -104,19 +104,21 @@
                 </div>
             </div>
 
-            <div class="bg-teal-600">
+            <div class="bg-teal-600 pb-1">
                 <!-- LET'S PARTY section -->
                 <div class="mb-5 col-span-7 md:col-span-5">
                     <div class="p-4">
                         <h2 class="text-3xl text-white font-bold tracking-wide mt-5" id="lets-party">YOU'VE GOT THIS
                         </h2>
-                        <div class="xl:flex border-dashed border-8 border-yellow-400 rounded bg-white p-5">
+                        <div class="xl:flex border-dashed border-8 border-orange-500 rounded bg-white p-5">
                             <p class="text-lg font-medium tracking-tight mb-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure corporis error cum autem
-                                beatae inventore quibusdam architecto suscipit dolorem est iste sequi, dignissimos
-                                molestiae quo et quae. In, iste eius?!
+                                A wise Yeezy once said, "People are cool." And you know what? 
+                                We think you're pretty cool people. So before you hit that 
+                                LET'S PARTY button, take a moment to think about all the things 
+                                that make you YOU! When you're ready to hit the party, smash that button and count 
+                                on us to have all your party-people notes right at your fingertips. 
                             </p>
-                            <button type="button" class="xl:order-first xl:mr-2 w-2/4 rounded bg-teal-600 generate-container p-2">
+                            <button type="button" class="xl:order-first xl:mr-2 w-2/4 rounded bg-teal-600 hover:bg-teal-500 generate-container p-2">
                                 <a href="./event.html" class="text-white font-bold tracking-wide">LET'S PARTY</a>
                             </button>
                         </div>
@@ -124,17 +126,14 @@
                 </div>
             </div>
 
-
-
-
             <!-- IN CASE OF EMERGENCY -->
             <div class="col-span-4 row-span-1 bg-yellow-400 flex items-center">
                 <a href="https://www.jellotime.com/" target="_blank" class="button-emer">IN CASE OF EMERGENCY <i
                         class="fa-solid fa-triangle-exclamation"></i></a>
             </div>
 
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 
 

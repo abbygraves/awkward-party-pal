@@ -1,6 +1,6 @@
 let apiGenEl = document.querySelector("#api-gen");
-let yeezyBtn = document.querySelector("#yeezy-btn");
-let factBtn = document.querySelector("#fact-btn");
+let yeezyBtn = document.querySelector("#yeezy");
+let factBtn = document.querySelector("#icebreaker");
 let copyBtn = document.querySelector("#copy");
 
 
