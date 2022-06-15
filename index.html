@@ -15,7 +15,7 @@
     <div class="grid grid-cols-7 h-screen bg-yellow-400">
 
         <!-- NAV SIDEBAR: medium screens and larger, NAV TOPBAR: small screens -->
-        <header class="col-span-7 md:col-span-2 h-fit md:h-full p-2 bg-teal-500 generate-container">
+        <header class="col-span-7 md:col-span-2 h-fit md:h-full p-2 bg-teal-500 generate-container" id="header">
             <h1 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
                 AWKWARD PARTY PAL
             </h1>
@@ -28,7 +28,7 @@
                     </a>
                     <a href="#recon" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
-                        Party People
+                        Party Pals
                     </a>
                     <a href="#lets-party" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
                     md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
@@ -47,13 +47,13 @@
                 <div class="p-6">
                     <h2 class="text-3xl font-bold tracking-wide mt-5" id="about">ABOUT</h2>
                     <div class="xl:flex border-solid border-8 border-teal-500 rounded bg-white p-5 section">
-                        <img class="float-left mr-3 w-2/5" src="./assets/images/they-dont-know.png">
+                        <img class="w-2/5 float-left mr-3" src="./assets/images/they-dont-know.png">
                         <p class="text-lg font-medium tracking-tight">
                             We get it, you're awkward. Luckily for you so are we!
                             Welcome to Awkward Party Pal. You may be that person who
                             thrives on the internet, but in real life you're...well
                             let's not even go there. We both know you resemble the
-                            dude with the party hat. Instead of showing
+                            dude with the party hat on the right. Instead of showing
                             up to an event empty handed (if you actually ever decide
                             to leave your house) we built this website to generate
                             conversation starters so you'll never have to deal with
@@ -94,7 +94,7 @@
                                         placeholder="Loves to dip their pizza in ranch!" />
                                     </br>
                                     <button type="submit" id="submit"
-                                        class="w-full text-white font-bold tracking-wide rounded bg-orange-500 hover:bg-yellow-400 generate-container p-2">SAVE</button>
+                                        class="w-3/4 text-white font-bold tracking-wide rounded bg-orange-500 hover:bg-yellow-400 generate-container p-2">SAVE</button>
                                 </form>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                     <div class="p-6">
                         <h2 class="text-3xl text-black font-bold tracking-wide mt-5" id="lets-party">YOU'VE GOT THIS
                         </h2>
-                        <div class="xl:flex border-solid border-8 border-teal-500 rounded bg-white p-5 section">
+                        <div class="border-solid border-8 border-teal-500 rounded bg-white p-5 section">
                             <p class="text-lg font-medium tracking-tight mb-5 ml-3">
                                 A wise Yeezy once said, "People are cool." And you know what? 
                                 We think you're pretty cool people. So before you hit that 
@@ -132,15 +132,9 @@
                         class="fa-solid fa-triangle-exclamation"></i></a>
             </div>
 
-            <button type="button" onclick="getProfiles()">Get</button>
-      
-            <button type="button" onclick="clearProfiles()">Clear</button>
-
         </main>
     </div>
-
   <script src="./assets/js/script.js"></script>
-
 </body>
 
 

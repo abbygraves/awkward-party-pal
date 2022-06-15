@@ -1,10 +1,9 @@
-var cardEl=document.querySelector("#guest-cards");
-
-var guestInfo; 
-
-let apiGenEl = document.querySelector("#api-gen");
 let yeezyBtn = document.querySelector("#yeezy");
 let factBtn = document.querySelector("#icebreaker");
+let apiGenEl = document.querySelector("#api-gen");
+var cardEl = document.querySelector("#guest-cards");
+var guestInfo;
+let deleteBtn = document.querySelector("#deleteList");
 let copyBtn = document.querySelector("#copy");
 
 
@@ -79,27 +78,51 @@ function copyClipboard(event) {
 
 // function to create party people cards
 function displayCard() {
-    var guestArray=JSON.parse(localStorage.getItem("guestInfo"));
+    if (localStorage.length) {
+        var guestArray = JSON.parse(localStorage.getItem("guestInfo"));
+        for (let i = 0; i < guestArray.length; i++) {
+            // create div element to act as card container
+            var card = document.createElement("div");
+            card.setAttribute("id", guestArray[i].id);
+            card.classList.add("m-4", "border-solid", "border-2", "border-black", "p-3", "rounded", "bg-teal-500", "generate-container");
+            cardEl.appendChild(card);
 
-    for (let i = 0; i < guestArray.length; i++) {
-        var card=document.createElement("div");
-        card.textContent=guestArray[i].name;
-        card.setAttribute("class", "card");
-        cardEl.appendChild(card);
-        
-        console.log(guestArray[i]);
+            // create h3 element for party people name
+            let cardName = document.createElement("h3");
+            cardName.classList.add("text-2xl", "text-white", "font-bold", "tracking-wide", "w-full", "pb-2");
+            cardName.textContent = guestArray[i].name;
 
+            // create p element for party people details
+            let cardDetails = document.createElement("p");
+            cardDetails.classList.add("w-full", "border-solid", "border-2", "border-black", "rounded", "bg-white", "p-4", "mb-4");
+            cardDetails.textContent = guestArray[i].details;
+
+            // append cardName and cardDetails to card
+            card.append(cardName, cardDetails);
+        }
     }
+
 }
+
+
+// function to clear localStorage
+function clearProfiles() {
+    localStorage.clear();
+    cardEl.innerHTML = "";
+}
+
+
+// dynamically generate party people cards on load
+displayCard();
 
 
 // event listenter to trigger askKanye function
 yeezyBtn.addEventListener("click", askKanye);
-
 // event listener to trigger randomFact function
 factBtn.addEventListener("click", randomFact);
+// event listener to run function clearProfiles
+deleteBtn.addEventListener("click", clearProfiles);
+
 
 // event listener to copy api response
 //copyBtn.addEventListener("click", copyClipboard);
-
-displayCard();
