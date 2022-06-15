@@ -1,3 +1,7 @@
+var cardEl=document.querySelector("#guest-cards");
+
+var guestInfo; 
+
 let apiGenEl = document.querySelector("#api-gen");
 let yeezyBtn = document.querySelector("#yeezy");
 let factBtn = document.querySelector("#icebreaker");
@@ -51,7 +55,7 @@ function genKanyeDiv(data) {
 function genFactDiv(result) {
     // clear existing quote
     apiGenEl.innerHTML = "";
-    
+
     // dynamically generate p-tag with api response data
     let apiDiv = document.createElement("p");
     apiDiv.textContent = result[0].fact;
@@ -73,6 +77,22 @@ function copyClipboard(event) {
 }
 
 
+// function to create party people cards
+function displayCard() {
+    var guestArray=JSON.parse(localStorage.getItem("guestInfo"));
+
+    for (let i = 0; i < guestArray.length; i++) {
+        var card=document.createElement("div");
+        card.textContent=guestArray[i].name;
+        card.setAttribute("class", "card");
+        cardEl.appendChild(card);
+        
+        console.log(guestArray[i]);
+
+    }
+}
+
+
 // event listenter to trigger askKanye function
 yeezyBtn.addEventListener("click", askKanye);
 
@@ -80,4 +100,6 @@ yeezyBtn.addEventListener("click", askKanye);
 factBtn.addEventListener("click", randomFact);
 
 // event listener to copy api response
-copyBtn.addEventListener("click", copyClipboard);
+//copyBtn.addEventListener("click", copyClipboard);
+
+displayCard();
