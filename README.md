@@ -22,6 +22,7 @@ SO THAT I can build meaningful relationships
 * API Ninjas - Facts API
 
 ## Website
+(deployed link goes here)
 
 ![ScreenShot](./assets/images/awkward-party-pal-screenshot.png)
 
@@ -32,7 +33,7 @@ Digital Art by Rafaël Rozendaal - jellotime.com
 
 - - - 
 
-Copyright (c) <2022> <The Eternal Codesters>
+Copyright © 2022 The Eternal Codesters
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
