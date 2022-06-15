@@ -38,7 +38,31 @@
             </nav>
         </header>
 
-        <!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
+      <!-- <div class="col-span-4 row-span-2 bg-yellow-400 about-sec">
+        <h2 class="tracking-wide lg:text-3xl">ABOUT</h2>
+        <p class="font-medium">
+          We get it, you're awkward. Luckily for you so are we! Welcome to Awkward Party Pal. You may be that person who thrives on the internet, but in real life you're...well let's not even go there. We both know you resemble the dude with the party hat on the right. Instead of showing up to an event empty handed 
+          (if you actually ever decide to leave your house) we built this website to generate conversation starters so you'll never have to deal with awkward silence again! 
+        </p>
+        <img class="float-right" src="./assets/images/they-dont-know.png">
+      </div>
+      
+      <div class="col-span-4 row-span-3 bg-yellow-400 flex flex-row pt-8 justify-center guest-info">
+        <form class="form-container flex flex-col justify-center p-0">
+          <label class="form-label tracking-wide pl-3 pb-2 bg-teal-600 flex grow items-center">GUEST INFO</label>
+          <div class="flex flex-col p-3">
+            <label for="name"></label>
+            <input class="form-input" id="name" name="name" placeholder="Jane Doe"/>
+            <label for="details"></label>
+            <input class="form-input details" id="icebreaker" name="details" placeholder="Loves to dip their pizza in ranch!"/>
+            <button type="submit" class="button-style mt-5 mb-3 save-btn md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white" id="submit">Save</button>
+          </div>
+        </form>
+        <div class="guest-info-container pr-10">
+          <h2 class="tracking-wide mb-2 lg:text-3xl">ADDING GUEST INFO</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, dolorem ratione incidunt soluta optio eligendi earum, impedit quisquam, ea sit beatae doloremque molestias dolore temporibus obcaecati magni unde eos facilis.
+          </p> -->
 
         <!-- begin main -->
         <main class="col-span-7 md:col-span-5 bg-yellow-400">
@@ -103,6 +127,11 @@
                     </div>
                 </div>
             </div>
+      <button type="button" onclick="getProfiles()">Get</button>
+      
+      <button type="button" onclick="clearProfiles()">Clear</button>
+      
+      
 
             <div class="bg-yellow-400 pb-1">
                 <!-- LET'S PARTY section -->
@@ -135,6 +164,8 @@
 
         </main>
     </div>
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 
