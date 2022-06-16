@@ -154,7 +154,7 @@ ul li {
   margin: 10px 115px;
   background-color: red;
   border-radius: 5px;
-  color: rgb(255, 221, 0);
+  color: white;
   cursor: pointer;
   filter: drop-shadow(-3px 4px 3px var(--grey));
   font-weight: bold;
@@ -181,6 +181,12 @@ ul li {
   margin-left: 2px;
 }
 
+.delete-btn:hover {
+  border-color: black;
+  color: #fff;
+  transition: all 150ms ease-in-out;
+  box-shadow: 0px 0px 10px 0px red inset, 0px 5px 15px 1px red;
+}
 
 @media screen and (max-width: 768px) {
   .button-style {
