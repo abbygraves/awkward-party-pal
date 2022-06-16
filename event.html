@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e1e3196b2.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Awkward Party Pal - Event</title>
+</head>
+
+<!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
+
+<body>
+    <div class="grid grid-cols-7 h-screen bg-yellow-400">
+
+        <!-- NAV SIDEBAR: medium screens and larger, NAV TOPBAR: small screens -->
+        <header class="col-span-7 md:col-span-2 h-fit md:h-full p-2 bg-teal-500 generate-container">
+            <h1 class="pt-2 text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl text-center md:text-left">
+                AWKWARD PARTY PAL
+            </h1>
+
+            <nav class="pt-5">
+                <ul class="grid grid-cols-3 gap-y-6 text-center">
+                    <a href="./index.html" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                        md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
+                        Go Home
+                    </a>
+                    <a href="#courage" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                        md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
+                        Digital Courage
+                    </a>
+                    <a href="#notes" class="m:col-start-1 md:col-span-3 text-xl font-bold md:bg-yellow-400 md:rounded-r md:w-3/4 md:p-2 md:-ml-2 
+                        md:hover:transition-colors md:hover:bg-teal-600 duration-1000 hover:text-white button-style">
+                        Party Pals
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- BREAKPOINTS "sm" = 640px, "md" = 768px, "lg" = 1024px, "xl" = 1280px, "2xl" = 1536px -->
+
+        <!-- begin main -->
+        <main class="col-span-7 md:col-span-5">
+
+            <div class="mb-5 col-span-7 md:col-span-5">
+                <div class="p-4">
+                    <h2 class="text-3xl font-bold tracking-wide mt-5 mb-2" id="courage">DIGITAL
+                        COURAGE
+                    </h2>
+                    <div class="xl:flex border-solid border-8 border-teal-500 rounded bg-white p-5 section">
+                        <p class="xl:w-1/2 text-lg font-medium tracking-tight mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eaque repudiandae quibusdam
+                            quisquam eveniet, consequatur necessitatibus obcaecati sed pariatur harum odit quam
+                            temporibus est dolores, debitis vitae dolorum tempore nisi?
+                        </p>
+                        <div>
+                            <!-- DIGITAL COURAGE BUTTONS -->
+                            <div
+                                class="m-4 col-span-7 border-solid border-4 border-orange-500 rounded bg-white p-4 generate-container">
+                                <p class="text-lg font-medium tracking-tight text-left leading-relaxed" id="api-gen">
+                                    Anxiety relief is just a click away!</p>
+                            </div>
+                            <button type="button" id="yeezy"
+                                class="mr-2 ml-4 text-white font-bold tracking-wide rounded bg-orange-500 hover:bg-yellow-400 generate-container p-2">
+                                YEEZY DOES IT</button>
+                            <button type="button" id="icebreaker"
+                                class="text-white font-bold tracking-wide rounded bg-orange-500 hover:bg-yellow-400 generate-container p-2">
+                                ICEBREAKERS</button>
+                            <!-- DIGITAL COURAGE API GEN DISPLAY -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bg-yellow-400 pb-5">
+                <!-- CRIB NOTES ABOUT -->
+                <div class="col-span-7 md:col-span-5">
+                    <div class="p-4">
+                        <h2 class="text-3xl text-black font-bold tracking-wide mt-5 mb-2" id="recon">PARTY PALS</h2>
+                        <div class="flex flex-col  border-solid border-8 border-teal-500 rounded bg-white p-5 section">
+                            <p class="xl:w-full text-lg font-medium tracking-tight mb-5">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae enim esse doloribus
+                                accusantium tempora, veniam expedita ad modi ipsum nemo provident, porro dignissimos
+                                minima? Totam deserunt odit explicabo saepe laboriosam.
+                            </p>
+                            <!-- PARTY PEOPLE CARDS -->
+                            <div id="guest-cards">
+                            </div>
+                            <!-- CLEAR LOCAL STORAGE -->
+                            <button type="button" id="deleteList"
+                                class="w-full text-white font-bold tracking-wide rounded bg-red-600 hover:bg-orange-500 generate-container p-2">
+                                DELETE THIS GUESTLIST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/event.js"></script>
+</body>
+
+</html>
