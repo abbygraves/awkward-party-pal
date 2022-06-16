@@ -1,41 +1,42 @@
-var formName = document.querySelector("#name")
-var formDetails = document.querySelector("#icebreaker")
-let saveBtn = document.querySelector("#submit");
+var formName=document.querySelector("#name")
+
+var formDetails=document.querySelector("#icebreaker")
+
+let saveBtn=document.querySelector("#submit");
+
 
 function saveProfile(event) {
-    var guestArrayString = localStorage.getItem("guestInfo");
-    let guestArray = []
-    if (guestArrayString !== null) {
-        guestArray = JSON.parse(guestArrayString);
-        console.log(guestArrayString);
-    }
 
-    let guestIdCounter = localStorage.getItem("guestIdCounter") || 0;
+ var guestArrayString=localStorage.getItem("guestInfo");
+ let guestArray=[]
+ if (guestArrayString!==null){
+    guestArray=JSON.parse(guestArrayString);
+    console.log(guestArrayString);
+}
 
-    event.preventDefault();
-    var guestObject = {
-        name: formName.value,
-        details: formDetails.value,
-        id: guestIdCounter
-    }
+ let guestIdCounter=localStorage.getItem("guestIdCounter") || 0;
 
-    guestIdCounter++;
-    console.log(guestObject.id);
-    guestArray.push(guestObject);
-    localStorage.setItem("guestInfo", JSON.stringify(guestArray));
-    localStorage.setItem("guestIdCounter", guestIdCounter);
-    formName.value = "";
-    formDetails.value = "";
+ event.preventDefault();
+  var guestObject={
+    name:formName.value, 
+    details:formDetails.value,
+    id:guestIdCounter
+ }
+
+ guestIdCounter++;
+ console.log(guestObject.id);
+ guestArray.push(guestObject);
+ localStorage.setItem("guestInfo", JSON.stringify(guestArray));
+ localStorage.setItem("guestIdCounter", guestIdCounter);
+ formName.value="";
+ formDetails.value="";
 }
 
 function getProfiles() {
     Object.keys(localStorage).forEach((key) => {
         console.log(key + " " + localStorage.getItem(key));
-    });
+       });
 }
 
-function clearProfiles() {
-    localStorage.clear();
-}
-
+// event listener to run function saveProfile
 saveBtn.addEventListener("click", saveProfile);
