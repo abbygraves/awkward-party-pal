@@ -22,7 +22,7 @@ SO THAT I can build meaningful relationships
 * API Ninjas - Facts API
 
 ## Website
-(deployed link goes here)
+**Link to deployed Github page ➝** [Awkward Party Pal](https://abbygraves.github.io/awkward-party-pal/)
 
 ![ScreenShot](./assets/images/awkward-party-pal-screenshot.png)
 
