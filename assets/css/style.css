@@ -21,7 +21,6 @@
    margin-left: 10px;
    margin-top: 10px;
    line-height: 1.2;
-   filter: drop-shadow(-3px 4px 3px var(--grey));
  }
  
  .about-sec {
